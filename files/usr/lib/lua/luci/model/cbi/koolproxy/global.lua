@@ -17,7 +17,6 @@ if luci.sys.call("pidof koolproxy >/dev/null") == 0 then
 else
 	status = translate("<strong><font color=\"red\">KoolProxy is Not Running</font></strong>")
 end
-e.description = translate(string.format("</font><br /><font color=\"green\">静态规则: %s / %s条 视频规则: %s 每日规则: %s / %s条 自定规则: %s条  Host: %s条</font>", s, l, u, p, q, h, i))
 
 o = Map("koolproxy", translate("KoolProxy"), translate("A powerful advertisement blocker. <br /><font color=\"red\">Adblock Plus Host list + koolproxy Blacklist mode runs without loss of bandwidth due to performance issues.<br /></font>"))
 
