@@ -19,7 +19,7 @@ define Package/luci-app-koolproxy
 	CATEGORY:=LuCI
 	SUBMENU:=3. Applications
 	TITLE:=LuCI support for koolproxy
-	DEPENDS:=+openssl-util +ipset +dnsmasq-full +@BUSYBOX_CONFIG_DIFF +iptables-mod-nat-extra +wget
+	DEPENDS:=+openssl-util +ipset +dnsmasq-full +@BUSYBOX_CONFIG_DIFF +iptables-mod-nat-extra  +ca-bundle +ca-certificates +libustream-openssl +wget
 	MAINTAINER:=panda-mute
 endef
 
